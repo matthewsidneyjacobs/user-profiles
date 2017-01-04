@@ -22,7 +22,7 @@ var users = [
 ];
 
 module.exports = {
-
+  //the error was in here. if(user.username...) should be user.name
     login: function(req, res, next) {
         var userFound = false;
         users.forEach(function(user) {
